@@ -46,7 +46,6 @@ if(navClose){
 }
 
 // -------- remove menu profile
-
 const navLink = document.querySelectorAll('.nav__link');
 
 function linkAction() {
@@ -56,3 +55,13 @@ function linkAction() {
 }
 
 navLink.forEach(n => n.addEventListener('click', linkAction));
+
+
+// -------- typewriter effect
+
+new Typewriter('#typewriter', {
+  strings: ['May Phyu Oo', 'Web Developer', 'Astronomy Enthusiast', 'Javascript Developer'],
+  autoStart: true,
+  loop: true,
+  cursor: "|"
+});
