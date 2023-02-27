@@ -65,3 +65,25 @@ new Typewriter('#typewriter', {
   loop: true,
   cursor: "|"
 });
+
+// -------- Portfolio Swiper
+
+var swiper = new Swiper(".mySwiper", {
+    cssMode: true,
+    spaceBetween: 30,
+    effect: 'fade',
+    loop: true,
+    mousewheel:{
+        invert: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    // mousewheel: true,
+    keyboard: true,
+  });
