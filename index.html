@@ -169,7 +169,7 @@
                 </div>
 
                 <div class="about__buttons">
-                    <a href="./src/assets/file/Resume.pdf" download="May_Phyu_Oo_CV" target="_blank" class="button button__flex"> Download CV <i class="uil uil-download-alt button__icon"></i></a>
+                    <a href="./src/assets/file/Resume.pdf" target="_blank" class="button button__flex"> Download CV <i class="uil uil-download-alt button__icon"></i></a>
                 </div>
             </div>
         </section>
@@ -589,62 +589,122 @@
             <h2 class="section__title">Portfolio</h2>
             <span class="section__subtitle">Most recent works</span>
 
-            <div class="blog-slider swiper mySwiper">
+            <div class="blog-slider">
                 <div class="blog-slider__wrp swiper-wrapper">
+                    
                     <!-- portfolio item 1 -->
                     <div class="blog-slider__item swiper-slide">
-                        <div class="blog-slider-img">
-                            <img src="" alt="portfolio item">
+                        <div class="blog-slider__img">
+                            <img src="./src/assets/img/place_list.png" alt="Places List">
                         </div>
 
                         <div class="blog-slider__content">
-                            <span class="blog-slider__code"> 1st August 2021</span>
-                            <div class="blog-slider__title">Project 1</div>
-                            <div class="blog-slider__text">Loreum ipsum akldf sadfasd</div>
-                            <a href="#portfolio" class="button blog-slider__button button__flex">Read more <i class="uil uil-play button__icon"></i></a>
+                            <span class="blog-slider__code"> Jan 2023</span>
+                            <div class="blog-slider__title"> Places List </div>
+                            <div class="blog-slider__text"> A website for sharing places and browsing other users' shared places. This website is made with MERN stack.</div>
+                            <a href="https://mern-placelist.firebaseapp.com/" target="_blank" class="button blog-slider__button button--flex"> 
+                                Link
+                                <i class="uil uil-play button__icon"></i>
+                            </a>
+
+                            <a href="https://github.com/mayphyuoo/placeslist-frontend" target="_blank" class="button blog-slider__button button--flex"> 
+                                Repo
+                                <i class="uil uil-github-alt button__icon"></i>
+                            </a>
+
                         </div>
                     </div>
 
                     <!-- portfolio item 2 -->
                     <div class="blog-slider__item swiper-slide">
-                        <div class="blog-slider-img">
-                            <img src="" alt="portfolio item">
+                        <div class="blog-slider__img">
+                            <img src="./src/assets/img/wordle_helper.png" alt="Wordle Helper">
                         </div>
 
                         <div class="blog-slider__content">
-                            <span class="blog-slider__code"> 1st August 2021</span>
-                            <div class="blog-slider__title">Project 2</div>
-                            <div class="blog-slider__text">Loreum ipsum akldf sadfasd</div>
-                            <a href="#portfolio" class="button blog-slider__button button__flex">Read more <i class="uil uil-play button__icon"></i></a>
+                            <span class="blog-slider__code"> October 2022</span>
+                            <div class="blog-slider__title"> Wordle Helper </div>
+                            <div class="blog-slider__text"> The client wanted a Wordle Helper application that is
+                                executable on multiplatforms, which are Windows and Linux. </div>
+                            <a href="https://github.com/PS2217/wordle-helper" target="_blank" class="button blog-slider__button button--flex"> 
+                                Repo
+                                <i class="uil uil-github-alt button__icon"></i>
+                            </a>
                         </div>
                     </div>
 
-                    <!-- portfolio item 3 -->
+                    <!-- For portfolio item 3 -->
                     <div class="blog-slider__item swiper-slide">
-                        <div class="blog-slider-img">
-                            <img src="" alt="portfolio item">
+                        <div class="blog-slider__img">
+                            <img src="./src/assets/img/weather_prediction.png" alt="Portfolio item">
                         </div>
 
                         <div class="blog-slider__content">
-                            <span class="blog-slider__code"> 1st August 2021</span>
-                            <div class="blog-slider__title">Project 3</div>
-                            <div class="blog-slider__text">Loreum ipsum akldf sadfasd</div>
-                            <a href="#portfolio" class="button blog-slider__button button__flex">Read more <i class="uil uil-play button__icon"></i></a>
+                            <span class="blog-slider__code"> April 2022 </span>
+                            <div class="blog-slider__title"> Weather </div>
+                            <div class="blog-slider__text"> A side project with my friends to practice the use of Github. </div>
+                            <a href="https://weather-comp22.herokuapp.com/" target="_blank" class="button blog-slider__button button--flex"> 
+                                Link
+                                <i class="uil uil-play button__icon"></i>
+                            </a>
+                            <a href="https://github.com/comp2022/weather" target="_blank" class="button blog-slider__button button--flex"> 
+                                Repo
+                                <i class="uil uil-github-alt button__icon"></i>
+                            </a>
                         </div>
                     </div>
+
+                    <div class="blog-slider__pagination"></div>
 
                 </div>
-
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-
             </div>
         </section>
 
         <!----------------- Contact Us ----------------->
         <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
 
+            <div class="row mt-lg-6 justify-content center contact_mail">
+                <!-- Contact information -->
+                <div class="col-lg-6 mx-lg-0 mx-2 contact__container container">
+
+                    <div class="contact__information">
+                        <i class="uil uil-envelope-alt contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">E-mail</h3>
+                            <span class="contact__subtitle">mayphyuoo.may@gmail.com</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Form -->
+                <div class="col-lg-6 pl-lg-4 mt-lg0 mt-6 contact-form" id="message-me">
+                    <h2 class="contact__title"> Interested to work together? - <span> Let's talk </span></h2>
+                    <form action="#" method="POST" class="cf">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <input type="text" name="message-name" class="form-control mb-30 cf" placeholder="Your Name">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="email" name="message-email" class="form-control mb-30 cf" placeholder="Your Email">
+                            </div>
+                            <div class="col-12">
+                                <input type="text" name="message-subject" class="form-control mb-30 cf" placeholder="Subject of your message">
+                            </div>
+                            <div class="col-12">
+                                <textarea name="message" class="form-control mb-30 cf" cols="30" rows="10" placeholder="Your Message"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="button button__flex send-message form-button">
+                                    Send Message <i class="uil uil-message button__icon"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </section>
 
     </main>

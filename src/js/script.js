@@ -68,11 +68,10 @@ new Typewriter('#typewriter', {
 
 // -------- Portfolio Swiper
 
-var swiper = new Swiper(".mySwiper", {
-    cssMode: true,
+var swiper = new Swiper(".blog-slider", {
     spaceBetween: 30,
     effect: 'fade',
-    loop: true,
+    // loop: true,
     mousewheel:{
         invert: false,
     },
@@ -81,9 +80,10 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
     pagination: {
-      el: ".swiper-pagination",
+      el: ".blog-slider__pagination",
       clickable: true,
     },
-    // mousewheel: true,
+    mousewheel: true,
     keyboard: true,
   });
+  
