@@ -25,6 +25,10 @@
     --scroll-thumb-color: hsl(var(--hue-color), 15%, 70%);
     --gradient-color: linear-gradient(90deg, rgba(228,54,112,1) 0%, rgba(222,92,136,1) 40%, rgba(214,153,174,1) 100%);
 
+    --footer-color: hsl(var(--hue-color), 55%, 50%);
+
+    --box-shadow: 0 2px 2px var(--first-color) !important;
+
     /********** FONTS ***********/
     --gullible-font: 'Maven Pro', sans-serif;
     --body-font: 'Poppins', sans-serif;
@@ -66,6 +70,10 @@
     /********** swiper **********/
     --swiper-pagination-top: 50%;
 
+    /********** card bg **********/
+    --card-background-color: #fff;
+    --border-color: rgba(255,255,255, 0.425);
+    --border-color-alt: none;
 }
 
 /* swiper bullet points for smaller devices */
@@ -107,6 +115,14 @@ body.dark-theme{
     --container-color: hsl(var(--hue-color), 30%, 16%);
     --scroll-bar-color: hsl(var(--hue-color), 10%, 50%);
     --scroll-thumb-color: hsl(var(--hue-color), 15%, 32%);
+
+    --footer-color: hsl(var(--hue-color), 53%, 18%);
+
+    --box-shadow: 0 0 2px 0 var(--first-color-lighter) !important;
+
+    --card-background-color: rgb(30, 59, 24);
+    --border-color: rgba(30, 59, 24, 0.425);
+    --border-color-alt: rgba(30, 59, 24, 0.425);
 }
 
 /************** NAV BUTTONS DARK/LIGHT THEME **************/
@@ -166,7 +182,7 @@ img{
     height: auto;
 }
 
-/************** CSS CLASSES **************/
+/************** REUSABLE CSS CLASSES **************/
 .section{
     padding: 2rem 0 4rem;
     margin: auto;
@@ -182,6 +198,7 @@ img{
     display: block;
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-3);
+    color: var(--text-color);
 }
 
 .section__title,
@@ -405,6 +422,7 @@ img{
     grid-area: home__content;
     align-content: center;
     text-align: center;
+    transform: translateX(-1rem);
 }
 
 .home__welcome{
@@ -545,6 +563,7 @@ img{
 .about__info-name{
     font-size: var(--smaller-font-size);
     font-family: var(--roboto-font);
+    color: var(--text-color-light);
 }
 
 .about__info-name,
@@ -671,8 +690,8 @@ img{
 
 .card_skill .contentBx h2 {
     position: relative;
-    font-weight: var(--font-medium);
-    color: var(--text-color);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
     margin: 0;
     padding: 0;
 }
@@ -752,17 +771,20 @@ img{
 
 .qualification__start-icon{
     font-size: var(--h3-font-size);
+    color: var(--mainText);
 }
 
 .qualification__title{
     font-size: var(--h2-font-size);
     font-weight: var(--font-medium);
+    color: var(--text-color);
 }
 
 .qualification__subtitle{
     display: inline-block;
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-1);
+    color: var(--text-color);
 }
 
 .mirror-face{
@@ -773,6 +795,11 @@ img{
     overflow: hidden;
     position: relative;
     /* border-color: var(--first-color); */
+}
+
+.transparent-card{
+    background-color: var(--card-background-color);
+    border-color: var(--border-color);
 }
 
 .task{
@@ -850,16 +877,13 @@ img{
 	position: relative;
 	max-width: 800px;
 	margin: auto;
-	background: #fff;
 	box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-	padding: 25px;
 	border-radius: 25px;
 	height: 400px;
 	transition: all 0.3s;
-  background-color: var(--background-body-color);
-  border-style: var(--border-style);
-  border-color: var(--border-color); 
-}
+    border-color: var(--border-color);
+  }
+
   @media screen and (max-width: 992px) {
 	.blog-slider {
 	  max-width: 680px;
@@ -881,10 +905,13 @@ img{
   .blog-slider__item {
 	display: flex;
 	align-items: center;
+    background-color: var(--card-background-color);
+    border-radius: 25px;
   }
   @media screen and (max-width: 768px) {
 	.blog-slider__item {
 	  flex-direction: column;
+      min-height: 500px;
 	}
   }
   .blog-slider__item.swiper-slide-active .blog-slider__img img {
@@ -945,7 +972,7 @@ img{
 	flex-shrink: 0;
 	height: 300px;
 	background-image: var(--gradient-first);
-	box-shadow: 4px 13px 30px 1px rgba(57, 158, 218, 0.2);
+	box-shadow: 4px 13px 30px 1px rgba(57, 218, 76, 0.2);
 	border-radius: 20px;
 	transform: translateX(-80px);
 	overflow: hidden;
@@ -987,7 +1014,8 @@ img{
 	}
   }
   .blog-slider__content {
-	padding-right: 25px;
+    color: var(--text-color);
+	padding-right: 40px;
   }
   @media screen and (max-width: 768px) {
 	.blog-slider__content {
@@ -1029,7 +1057,7 @@ img{
 	padding: 15px 35px;
 	border-radius: 50px;
 	color: #fff;
-	box-shadow: 0px 14px 80px rgba(76, 56, 252, 0.4);
+	box-shadow: 0px 14px 80px rgba(56, 252, 121, 0.4);
 	text-decoration: none;
 	/* font-weight: 500; */
 	justify-content: center;
@@ -1093,7 +1121,7 @@ img{
 	height: 11px;
 	display: block;
 	border-radius: 10px;
-	background: #062744;
+	background: #064406;
 	opacity: 0.2;
 	transition: all 0.3s;
   }
@@ -1101,7 +1129,7 @@ img{
 	opacity: 1;
 	background: var(--first-color-alt);
 	height: 30px;
-	box-shadow: 0px 0px 20px rgba(252, 56, 56, 0.3);
+	box-shadow: 0px 0px 20px rgba(85, 252, 56, 0.3);
   }
   @media screen and (max-width: 768px) {
 	.blog-slider__pagination .swiper-pagination-bullet-active {
@@ -1183,15 +1211,15 @@ img{
     resize: none;
   }
 
-  form input:focus, form textarea:focus {
+  /* form input:focus, form textarea:focus {
     box-shadow: 0 2px 2px var(--first-color) !important;
     -moz-box-shadow: 0 2px 2px var(--first-color) !important;
     -webkit-box-shadow: 0 2px 2px var(--first-color) !important;
-  }
+  } */
 
   form #input-submit{
-    color: white;
-    background: var(--first-color);
+    color: #fff;
+    background: var(--first-color-alt);
     cursor: pointer;
     border: none;
   }
@@ -1204,6 +1232,23 @@ img{
 
   form textarea {
     height: 130px;
+  }
+
+  .form-control{
+    background-color: var(--card-background-color);
+    color: var(--text-color);
+  }
+
+  .form-control:focus {
+    color: var(--text-color);
+    background-color: var(--card-background-color);
+    box-shadow: var(--box-shadow);
+    -moz-box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
+  }
+
+  .cf{
+    border-color: var(--border-color-alt);
   }
 
   .cf::before,
@@ -1247,7 +1292,7 @@ img{
 
   .footer{
     padding-top: var(--mb-2);
-    background-color: var(--first-color-alt);
+    background-color: var(--footer-color);
   }
 
   .footer__container{
@@ -1255,7 +1300,7 @@ img{
   }
 
   .footer__bg{
-    background-color: var(--first-color-alt);
+    background-color: var(--footer-color);
     /* padding: 2rem 0 3rem; */
   }
 
@@ -1440,6 +1485,7 @@ img{
 
     .home__data{
         grid-column: initial;
+        transform: none;
     }
 
     .contact__container{
@@ -1685,7 +1731,7 @@ img{
     }
 
     .home__social{
-        transform: translateX(-4rem);
+        transform: translateX(-7.5rem);
     }
 
     .contact-form{
