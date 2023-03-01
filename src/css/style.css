@@ -226,7 +226,7 @@ img{
 
 /************** LAYOUT **************/
 .container{
-    margin-right: var(--mb-1);
+    margin-right: auto;
 }
 
 .grid{
@@ -358,6 +358,7 @@ img{
     align-content: space-between;
     margin-top: var(--mb-3);
     padding-bottom: 0;
+    margin-bottom: var(--mb-2);
 }
 
 .home__container{
@@ -371,7 +372,7 @@ img{
 
 .home__content{
     display: grid;
-    grid-template-columns: .08fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: 'home__social home__content';
     padding-top: var(--mb-2-5);
     align-items: center;
@@ -513,6 +514,7 @@ img{
 .about{
     padding-top: 1rem;
     color: var(--text-color);
+    margin-top: 4rem;
 }
 
 .about__img{
@@ -1043,6 +1045,11 @@ img{
 	.blog-slider__button {
 	  width: 100%;
 	}
+
+    .portfolio__link{
+        margin-bottom: 1rem;
+    }
+
   }
   .blog-slider .swiper-container-horizontal > ,
   .blog-slider .swiper-pagination-custom,
@@ -1101,4 +1108,597 @@ img{
 	  height: 11px;
 	  width: 30px;
 	}
+  }
+
+  /************** CONTACT FORM SECTION **************/
+
+  /* Contact info */
+  .contact_mail{
+    margin-left: var(--mb-3);
+    margin-right: var(--mb-1-5);
+    width: 90%;
+  }
+
+  .contact__container{
+    height: 500px;
+    line-height: 500px;
+  }
+
+  .contact__container img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .contact__information{
+    display: flex;
+    margin-bottom: var(--mb-2);
+  }
+
+  .contact__icon{
+    font-size: 2rem;
+    color: var(--first-color);
+    margin-right: var(--mb-0-75);
+  }
+
+  .contact__title{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+  }
+
+  .contact__subtitle{
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+  }
+
+  /* Form */
+
+  .contact-form{
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    text-align: left;
+  }
+
+  form{
+    max-width: 600px;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  form input, form textarea {
+    border: 5px;
+    outline: 0;
+    padding: 1em;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    margin-top: var(--mb-1-5);
+    font-family: var(--roboto-font);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    resize: none;
+  }
+
+  form input:focus, form textarea:focus {
+    box-shadow: 0 2px 2px var(--first-color) !important;
+    -moz-box-shadow: 0 2px 2px var(--first-color) !important;
+    -webkit-box-shadow: 0 2px 2px var(--first-color) !important;
+  }
+
+  form #input-submit{
+    color: white;
+    background: var(--first-color);
+    cursor: pointer;
+    border: none;
+  }
+
+  form #input-submit:hover{
+    box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+    -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+    -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  }
+
+  form textarea {
+    height: 130px;
+  }
+
+  .cf::before,
+  .cf::after {
+    content: '';
+    display: table;
+  }
+
+  .cf::after{
+    clear: both;
+  }
+
+  .send-message {
+    width: 80%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    margin-top: var(--mb-2);
+    transition: all 0.5s;
+  }
+
+  .send-message:hover{
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  }
+
+  .send-message:hover i{
+    padding-left: 15px;
+    transition: all 0.5s;
+  }
+
+
+  /************** FOOTER SECTION **************/
+
+  .footer{
+    padding-top: var(--mb-2);
+    background-color: var(--first-color-alt);
+  }
+
+  .footer__container{
+    row-gap: 3.5rem;
+  }
+
+  .footer__bg{
+    background-color: var(--first-color-alt);
+    /* padding: 2rem 0 3rem; */
+  }
+
+  .footer__title{
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-0-25);
+  }
+
+  .footer__subtitle{
+    font-size: var(--small-font-size);
+  }
+
+  .footer__links{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
+
+  .footer__link:hover{
+    color: var(--first-color-lighter);
+  }
+
+  .footer__socials{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-right: var(--mb-1-5);
+    column-gap: var(--mb-1);
+  }
+
+  .footer__social-icon{
+    margin: var(--mb-0-5);
+    color: var(--first-color-lighter);
+  }
+
+  .footer__social:hover{
+    color: var(--first-color-lighter);
+  }
+
+  .footer__copy{
+    font-size: var(--smaller-font-size);
+    text-align: center;
+    color: var(--text-color);
+    margin-top: var(--mb-3);
+  }
+
+  .footer__title,
+  .footer__subtitle,
+  .footer__link,
+  .footer__social{
+    color: #fff;
+  }
+
+
+  /************** SCROLL UP **************/
+  .scrollup{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    background-color: var(--first-color);
+    opacity: 0.8;
+    padding: 0 0.3rem;
+    border-radius: 0.4rem;
+    z-index: var(--z-tooltip);
+    transition: 0.4s;
+  }
+
+  .scrollup:hover{
+    background-color: var(--first-color-alt);
+  }
+
+  .scrollup__icon{
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+  /* show scroll button */
+  .show-scroll{
+    bottom: 5rem;
+  }
+
+  /************** SCROLL BAR **************/
+  ::-webkit-scrollbar{
+    width: 0.8rem;
+    background-color: var(--scroll-bar-color);
+    border-radius: 0.5rem;
+  }
+
+  ::webkit-scrollbar-thumb{
+    background-color: var(--scroll-thumb-color);
+    border-radius: 0.5rem;
+  }
+
+  ::-webkit-scrollbar-thumb:hover{
+    background-color: var(--text-color-light);
+  }
+
+  /************** MEDIA QUERIES **************/
+
+  /* Small Screen and anything smaller than this should go to hell like galaxy z fold */
+  @media screen and (max-width: 350px) {
+    .container{
+        margin-left: var(--mb-0-25);
+        margin-right: var(--mb-1);
+    }
+
+    .nav__menu{
+        padding: 2rem 0.25rem 4rem;
+    }
+
+    .nav__list{
+        column-gap: 0;
+        padding-left: 0;
+    }
+    
+    .home__container{
+        gap: 0;
+    }
+
+    .home__content{
+        grid-template-columns: .25fr 3fr;
+    }
+
+    .home__scroll{
+        margin-top: var(--mb-0-25);
+    }
+
+    .home__scroll-mouse{
+        margin-top: var(--mb-0-25);
+    }
+
+    .about{
+        margin-top: 6rem;
+    }
+
+    .qualification__data{
+        gap: 0.5rem;
+    }
+
+    .footer__links{
+        margin-left: 0;
+    }
+
+    ul {
+        padding-left: 0;
+    }
+
+    ::-webkit-scrollbar{
+        width: 0.4rem;
+        border-radius: 0.4rem;
+    }
+
+    ::-webkit-scrollbar-thumb{
+        background-color: var(--scroll-thumb-color);
+        border-radius: 0.2rem;
+    }
+  }
+
+  /* Medium Screen */
+  @media screen and (max-width: 568px) {
+    ul {
+        padding-left: 0;
+    }
+
+    #home{
+        min-height: 60vh;
+    }
+
+    .home__social{
+        display: none;
+    }
+
+    .home__container{
+        margin-left: auto;
+        gap: 0;
+    }
+
+    .home__content{
+        grid-template-columns: max-content 1fr;
+    }
+
+    .home__data{
+        grid-column: initial;
+    }
+
+    .contact__container{
+        height: 100%;
+        line-height: normal;
+    }
+
+    .contact_mail{
+        margin-left: auto;
+    }
+
+    .home__scroll{
+        margin-top: var(--mb-0-25);
+    }
+
+    .home__scroll-mouse{
+        margin-top: var(--mb-0-25);
+    }
+
+    .about{
+        margin-top: 6rem;
+    }
+
+    .about__container,
+    .skill__container,
+    .portfolio__container,
+    .contact__container,
+    .footer__container{
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: var(--mb-1);
+        padding-right: var(--mb-1);
+    }
+
+    #portfolio{
+        padding-bottom: 0;
+    }
+
+    #contact{
+        padding-top: 0;
+    }
+  }
+
+  /* between medium and large screens there are so called abominations */
+  @media screen and (max-width:768px) and (min-width: 586px) {
+
+    ul {
+        padding-left: 0;
+    }
+
+    .container{
+        margin: auto;
+    }
+
+    #portfolio{
+        padding-bottom: 0;
+    }
+
+    #contact{
+        padding-top: 0;
+    }
+
+    .contact__container{
+        height: 350px;
+        line-height: 350px;
+    }
+
+    .contact_mail{
+        margin-left: auto;
+    }
+
+  }
+
+  /* Large Screen */
+  @media screen and (min-width: 768px) {
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    body{
+        margin: 0;
+    }
+
+    .section{
+        padding: 6rem 0 2rem;
+    }
+
+    .section__subtitle{
+        margin-bottom: 4rem;
+    }
+
+    .header{
+        top: 0;
+        bottom: auto;
+    }
+
+    .header,
+    .main,
+    .footer__container{
+        padding: 0 1rem;
+    }
+
+    .nav{
+      height: calc(var(--header-height) + 1.5rem);
+      column-gap: 1rem;
+    }
+
+    .nav__icon,
+    .nav__close,
+    .nav__toggle{
+      display: none;
+    }
+
+    .nav__list{
+        display: flex;
+        column-gap: 2rem;
+        margin-bottom: auto;
+    }
+
+    .nav__menu{
+        margin-left: auto;
+    }
+
+    .change-theme{
+        margin: 0;
+        /* padding: 0; */
+    }
+
+    .home__container{
+        row-gap: 5rem;
+    }
+
+    .home__content{
+        padding-top: 2.5rem;
+        column-gap: 2rem; 
+    }
+
+    .home__scroll{
+        margin: 0;
+    }
+
+    .home__scroll-button{
+        margin-left: 3rem;
+    }
+
+    .about{
+        margin-top: 4rem;
+    }
+
+    .about__container{
+        column-gap: 5rem;
+    }
+
+    .about__img{
+        width: 350px;
+    }
+
+    .about__description{
+        text-align: initial;
+    }
+
+    .footer__container{
+        grid-template-columns: 1fr 2fr 1fr;
+        margin: auto;
+        max-width: fit-content;
+        justify-content: center;
+    }
+
+    .footer__bg{
+        padding: 3rem 0 3.5rem;
+    }
+
+    .footer__links{
+        flex-direction: row;
+        column-gap: 2rem;
+        padding-left: 0;
+    }
+
+    .footer__socials{
+        justify-content: flex-end;
+    }
+
+    .footer__copy{
+        margin-top: 4.5rem;
+    }
+
+  }
+
+  /* again dealing with abominations */
+  @media screen and (min-width: 768px) and (max-width: 845px) {
+
+    .nav__icon,
+    .nav__close,
+    .nav__toggle{
+      display: contents;
+    }
+
+    .nav__close:before{
+        margin-top: var(--mb-2);
+        position: absolute;
+        right: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .show-menu{
+        top: 0;
+    }
+
+    .nav__list{
+        display: grid;
+    }
+
+    .nav__menu{
+        position: fixed;
+        bottom: -100%;
+        right: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--body-color);
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px rgba(0,0,0,0.15);
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: .5s;
+    }
+
+  }
+
+  /* Larger Screen aka gigantic screens */
+  @media screen and (min-width: 1024px) {
+    .about{
+        margin-top: 6rem;
+    }
+
+    .header,
+    .main,
+    .footer__container{
+        padding: 0;
+    }
+
+    #home{
+        height: 85vh;
+    }
+
+    .home__social{
+        transform: translateX(-4rem);
+    }
+
+    .contact-form{
+        width: 460px;
+    }
+
+    .footer__container{
+        margin: auto;
+        justify-content: center;
+    }
+
+    .footer__logo{
+        padding-left: 32px;
+    }
+
   }

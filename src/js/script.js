@@ -58,7 +58,6 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 
 
 // -------- typewriter effect
-
 new Typewriter('#typewriter', {
   strings: ['May Phyu Oo', 'Web Developer', 'Astronomy Enthusiast', 'Javascript Developer'],
   autoStart: true,
@@ -67,7 +66,6 @@ new Typewriter('#typewriter', {
 });
 
 // -------- Portfolio Swiper
-
 var swiper = new Swiper(".blog-slider", {
     spaceBetween: 30,
     effect: 'fade',
@@ -87,3 +85,40 @@ var swiper = new Swiper(".blog-slider", {
     keyboard: true,
   });
   
+
+// -------- Scroll Section
+
+function scrollup(){
+    const scrollup = document.getElementById("scroll-up");
+
+    // scroll up icon will appear if the scroll is higher than 560 viewpoint
+    if(this.scrollY >= 560){
+        scrollup.classList.add('show-scroll');
+    } else {
+        scrollup.classList.remove('show-scroll');
+    }
+}
+
+window.addEventListener('scroll', scrollup);
+
+
+// -------- Scroll Section Active
+
+const sections = document.querySelectorAll('section[id]');
+
+function scrollActive() {
+    const scrollY = window.pageYOffset;
+
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 50;
+        sectionId = current.getAttribute('id');
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link');
+        } else {
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link');
+        }
+    })
+}
+window.addEventListener('scroll', scrollActive);

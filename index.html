@@ -120,7 +120,7 @@
                     </small>
                     <h1 class="home__title">Hey I'm</h1>
                     <div id="typewriter"></div>
-                    <h3 class="home__subtitle" id="home-bio">a fast learner who constantly pushes the boundaries to grow and always improving my coding skills. </h3>
+                    <h3 class="home__subtitle" id="home-bio">a fast learner who constantly pushes the boundaries to grow and always improving my coding skills. love playing games 🎮 and also enthusiastic about astronomy 🌠🌌 </h3>
                     <a href="#contact" class="button button__flex">
                         Contact Me <i class="uil uil-message button__icon"></i>
                     </a>
@@ -152,10 +152,10 @@
                 </div>
 
                 <div class="about__info">
-                    <div>
+                    <!-- <div>
                         <span class="about__info-title">4+</span>
                         <span class="about__info-name"> Completed <br> Projects </span>
-                    </div>
+                    </div> -->
 
                     <div>
                         <span class="about__info-title">4+</span>
@@ -301,13 +301,25 @@
                         </div>
                     </div>
 
+                    <!-- skill 11 -->
+                    <div class="skill__container-card">
+                        <div class="card_skill shadow2">
+                            <div class="imgBx smallImgBx">
+                                <img src="./src/assets/img/github.svg" alt="Git logo">
+                            </div>
+                            <div class="contentBx">
+                                <h2> GitHub </h2>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             
         </section>
 
         <!----------------- Qualifications ----------------->
-        <section class="qualifications section" id="qualifications">
+        <section class="qualification__section" id="qualifications">
             <h2 class="section__title"> Qualification </h2>
             <span class="section__subtitle">  </span>
 
@@ -602,7 +614,7 @@
                             <span class="blog-slider__code"> Jan 2023</span>
                             <div class="blog-slider__title"> Places List </div>
                             <div class="blog-slider__text"> A website for sharing places and browsing other users' shared places. This website is made with MERN stack.</div>
-                            <a href="https://mern-placelist.firebaseapp.com/" target="_blank" class="button blog-slider__button button--flex"> 
+                            <a href="https://mern-placelist.firebaseapp.com/" target="_blank" class="button blog-slider__button button--flex portfolio__link"> 
                                 Link
                                 <i class="uil uil-play button__icon"></i>
                             </a>
@@ -643,7 +655,7 @@
                             <span class="blog-slider__code"> April 2022 </span>
                             <div class="blog-slider__title"> Weather </div>
                             <div class="blog-slider__text"> A side project with my friends to practice the use of Github. </div>
-                            <a href="https://weather-comp22.herokuapp.com/" target="_blank" class="button blog-slider__button button--flex"> 
+                            <a href="https://weather-comp22.herokuapp.com/" target="_blank" class="button blog-slider__button button--flex portfolio__link"> 
                                 Link
                                 <i class="uil uil-play button__icon"></i>
                             </a>
@@ -660,44 +672,39 @@
             </div>
         </section>
 
-        <!----------------- Contact Us ----------------->
+        <!----------------- Contact Me ----------------->
         <section class="contact section" id="contact">
             <h2 class="section__title">Contact Me</h2>
             <span class="section__subtitle">Get in touch</span>
 
-            <div class="row mt-lg-6 justify-content center contact_mail">
+            <div class="row mt-lg-6 justify-content-center contact_mail">
                 <!-- Contact information -->
                 <div class="col-lg-6 mx-lg-0 mx-2 contact__container container">
-
-                    <div class="contact__information">
-                        <i class="uil uil-envelope-alt contact__icon"></i>
-                        <div>
-                            <h3 class="contact__title">E-mail</h3>
-                            <span class="contact__subtitle">mayphyuoo.may@gmail.com</span>
-                        </div>
+                    <div class="contact__cover">
+                        
+                        <a class="gif-credit" target="_blank" href="https://mini-moss.tumblr.com/post/189228016069/botanists-window-twitter-instagram-print"><img src="./src/assets/img/header-bg.gif" alt=""></a>
                     </div>
-
                 </div>
 
                 <!-- Form -->
-                <div class="col-lg-6 pl-lg-4 mt-lg0 mt-6 contact-form" id="message-me">
+                <div class="col-lg-6 pl-lg-4 mt-lg-0 mt-6 contact-form" id="message-me">
                     <h2 class="contact__title"> Interested to work together? - <span> Let's talk </span></h2>
-                    <form action="#" method="POST" class="cf">
+                    <form action="mailto:mayphyuoo.may@gmail.com" method="POST" class="cf">
                         <div class="row">
                             <div class="col-lg-6">
-                                <input type="text" name="message-name" class="form-control mb-30 cf" placeholder="Your Name">
+                                <input type="text" name="message-name" class="form-control mb-30 cf contact__input" placeholder="Your Name">
                             </div>
                             <div class="col-lg-6">
-                                <input type="email" name="message-email" class="form-control mb-30 cf" placeholder="Your Email">
+                                <input type="email" name="message-email" class="form-control mb-30 cf contact__input" placeholder="Your Email">
                             </div>
                             <div class="col-12">
-                                <input type="text" name="message-subject" class="form-control mb-30 cf" placeholder="Subject of your message">
+                                <input type="text" name="message-subject" class="form-control mb-30 cf contact__input" placeholder="Subject of your message">
                             </div>
                             <div class="col-12">
-                                <textarea name="message" class="form-control mb-30 cf" cols="30" rows="10" placeholder="Your Message"></textarea>
+                                <textarea name="message" class="form-control mb-30 cf contact__input" cols="30" rows="10" placeholder="Your Message"></textarea>
                             </div>
                             <div class="col-12">
-                                <button type="submit" class="button button__flex send-message form-button">
+                                <button type="submit" class="button button__flex send-message form-button" id="input-submit" value="Send">
                                     Send Message <i class="uil uil-message button__icon"></i>
                                 </button>
                             </div>
@@ -710,11 +717,54 @@
     </main>
     <!----------------- Footer ----------------->
     <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div class="footer__logo">
+                    <h1 class="footer__title"> MAY 🌻 </h1>
+                    <span class="footer__subtitle"> Website Developer </span>
+                </div>
 
+                <ul class="footer__links">
+                    <li>
+                        <a href="#about" class="footer__link">About Me</a>
+                    </li>
+
+                    <li>
+                        <a href="#portfolio" class="footer__link">My Portfolio</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="footer__link">Contact Me</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://www.linkedin.com/in/may-phyu-oo/" target="_blank" class="footer__social-icon" id="myLinkedIn">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                    <a href="https://www.instagram.com/_mayphyuoo/?hl=en" target="_blank" class="footer__social-icon" id="myInstagram">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <a href="https://github.com/mayphyuoo" target="_blank" class="footer__social-icon" id="myGitHub">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                    <a href="https://www.facebook.com/mayphyu.oo.5" target="_blank" class="footer__social-icon" id="myFacebook">
+                        <i class="uil uil-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/may_phyu_oo" target="_blank" class="footer__social-icon" id="myTwitter">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; MOO. All rights reserved</p>
+        </div>
     </footer>
 
-
-
+    <!----------------- Scroll Top ----------------->
+    <a href="#home" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
 
     <!-- Scripts -->
 
