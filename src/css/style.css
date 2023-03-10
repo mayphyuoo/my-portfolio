@@ -1390,7 +1390,7 @@ img{
     border-radius: 0.5rem;
   }
 
-  ::webkit-scrollbar-thumb{
+  ::-webkit-scrollbar-thumb{
     background-color: var(--scroll-thumb-color);
     border-radius: 0.5rem;
   }
