@@ -262,6 +262,11 @@ img{
 }
 
 /************** NAV STYLING **************/
+
+#theme-button {
+  cursor: pointer;
+}
+
 .uil-moon{
     color: var(--text-color);
 }
@@ -1337,14 +1342,14 @@ img{
     color: var(--first-color-lighter);
   }
 
-  .footer__social:hover{
+  .footer__social-icon:hover{
     color: var(--first-color-lighter);
   }
 
   .footer__copy{
     font-size: var(--smaller-font-size);
     text-align: center;
-    color: var(--text-color);
+    color: var(--first-color-lighter);
     margin-top: var(--mb-3);
   }
 
